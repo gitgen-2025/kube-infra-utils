@@ -8,7 +8,6 @@ class K8sUpgradeManager:
     def _init_(self, version="1.32.3", dry_run=False):
         self.version = version
         self.dry_run = dry_run
-
     def run(self, cmd, check=True):
         print(f"\n➡️ {cmd}")
         if self.dry_run:
